@@ -1,29 +1,3 @@
-
-@echo off
-
-echo ==================================
-echo   Hello from my Jenkins Job
-echo ==================================
-
-echo.
-echo Current User:
-whoami
-
-echo.
-echo Current Directory / Workspace:
-cd
-
-echo.
-echo Files in Workspace:
+echo Building the project
+echo %CD%
 dir
-
-echo.
-echo Creating a text file...
-echo Hello, this file was created by Jenkins. > output.txt
-
-echo.
-echo Reading the text file:
-type output.txt
-
-echo.
-echo Jenkins Freestyle Job Completed!
